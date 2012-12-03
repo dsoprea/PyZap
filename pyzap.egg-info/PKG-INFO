@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyzap
+Version: 0.1dev
+Summary: Python wrapper library for ZapLib digital television (DVB) tuning library.
+Home-page: https://github.com/dsoprea/PyZap
+Author: Dustin Oprea
+Author-email: myselfasunder@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: dvb dvb-a dvb-c dvb-s dvb-t dvb-apps television cable
+Platform: UNKNOWN
