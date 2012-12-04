@@ -1,6 +1,9 @@
-setup.cfg
+README.txt
 setup.py
 pyzap/__init__.py
+pyzap/calls.py
+pyzap/constants.py
+pyzap/types.py
 pyzap.egg-info/PKG-INFO
 pyzap.egg-info/SOURCES.txt
 pyzap.egg-info/dependency_links.txt

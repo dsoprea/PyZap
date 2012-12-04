@@ -1,2 +1,3 @@
 set_path.sh
 *.pyc
+dist
