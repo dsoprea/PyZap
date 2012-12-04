@@ -32,7 +32,7 @@ Description
 
 This library allows a Python script to tune channels with nothing more than the 
 ZapLib library, and the correct tuning values for the type of DVB that you're
-trying to decode.
+trying to decode. No channels.conf file is required.
 
 ATSC (air/US) Example
 =====================
