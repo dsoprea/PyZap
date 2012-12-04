@@ -50,3 +50,14 @@ class DVBT_TUNE_INFO(Structure):
                 ('heirarchy_information', c_uint),
                ]
 
+STATUS_RECEIVER_CB = CFUNCTYPE(c_int, 
+							   c_int, 
+							   c_ushort, 
+							   c_ushort, 
+							   c_uint, 
+							   c_uint, 
+							   c_uint
+							  )
+
+
+
