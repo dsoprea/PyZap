@@ -3,7 +3,7 @@ import sys, os
 
 # TODO: Require zaplib library.
 
-version = '0.2'
+version = '0.2.2'
 
 setup(name='pyzap',
       version=version,
@@ -28,7 +28,7 @@ trying to decode. No channels.conf file is required.
       license='LGPL',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
-      zip_safe=False,
+      zip_safe=True,
       install_requires=[
           # -*- Extra requirements: -*-
       ],

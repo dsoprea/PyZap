@@ -8,5 +8,5 @@ pyzap.egg-info/PKG-INFO
 pyzap.egg-info/SOURCES.txt
 pyzap.egg-info/dependency_links.txt
 pyzap.egg-info/entry_points.txt
-pyzap.egg-info/not-zip-safe
 pyzap.egg-info/top_level.txt
+pyzap.egg-info/zip-safe
