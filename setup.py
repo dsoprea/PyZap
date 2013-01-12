@@ -3,7 +3,7 @@ import sys, os
 
 # TODO: Require zaplib library.
 
-version = '0.2.2'
+version = '0.2.3'
 
 setup(name='pyzap',
       version=version,
