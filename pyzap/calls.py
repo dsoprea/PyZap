@@ -6,12 +6,12 @@ from pyzap.types import *
 
 if 'ZAPLIB_FILEPATH' in environ:
     library_filepath = environ['ZAPLIB_FILEPATH']
-elif os.path.exists('/usr/local/lib/zaplib.so'):
-    library_filepath = '/usr/local/lib/zaplib.so'
-elif os.path.exists('/usr/lib/zaplib.so'):
-    library_filepath = '/usr/lib/zaplib.so'
-else
-    raise SystemError("Could not determine path of zaplib.so .")
+elif exists('/usr/local/lib/libzaplib.so'):
+    library_filepath = '/usr/local/lib/libzaplib.so'
+elif exists('/usr/lib/libzaplib.so'):
+    library_filepath = '/usr/lib/libzaplib.so'
+else:
+    raise SystemError("Could not determine path of libzaplib.so .")
 
 instance = cdll.LoadLibrary(library_filepath)
 
