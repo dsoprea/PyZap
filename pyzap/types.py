@@ -12,6 +12,7 @@ class ATSC_TUNE_INFO(Structure):
                 ('modulation', c_uint),
                 ('vpid',       c_uint),
                 ('apid',       c_uint),
+                ('sid',        c_uint),
                ]
 
 class DVBC_TUNE_INFO(Structure):
