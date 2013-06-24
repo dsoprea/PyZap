@@ -56,15 +56,19 @@ ATSC (air/US) Example
     tuner_info.frontend = 0
     tuner_info.demux    = 0
 
+    # channels.conf record: Create:551028615:8VSB:65:67:4
+
     tune_info = ATSC_TUNE_INFO()
-    tune_info.frequency  = 551028615 # 'Florida' channel.
+    tune_info.frequency  = 551028615
     tune_info.modulation = modulation('VSB_8')
-    tune_info.vpid       = 0x61 #97
-    tune_info.apid       = 0x63 #99
+    tune_info.vpid       = 65
+    tune_info.apid       = 67
+    tune_info.sid        = 4
 
     dvr = 1
+    permit_psi = 1
 
-    retval = c_azap_tune_silent(tuner_info, tune_info, dvr, c_status_receiver)
+    retval = c_azap_tune_silent(tuner_info, tune_info, dvr, permit_psi, c_status_receiver)
 
 To execute when zaplib.so is in a non-standard location:
 
