@@ -1,19 +1,7 @@
 from ctypes import *
-from os import environ
-from os.path import exists
 
 from pyzap.types import *
-
-if 'ZAPLIB_FILEPATH' in environ:
-    library_filepath = environ['ZAPLIB_FILEPATH']
-elif exists('/usr/local/lib/libzaplib.so'):
-    library_filepath = '/usr/local/lib/libzaplib.so'
-elif exists('/usr/lib/libzaplib.so'):
-    library_filepath = '/usr/lib/libzaplib.so'
-else:
-    raise SystemError("Could not determine path of libzaplib.so .")
-
-instance = cdll.LoadLibrary(library_filepath)
+from pyzap.library import instance
 
 #extern int azap_tune_silent(t_tuner_descriptor tuner, 
 #                            t_atsc_tune_info tune_info, int dvr, int rec_psi,
