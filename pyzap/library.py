@@ -6,3 +6,4 @@ if _FILEPATH is None:
     _FILEPATH = 'libzaplib.so'
 
 instance = cdll.LoadLibrary(_FILEPATH)
+
